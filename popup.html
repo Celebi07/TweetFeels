@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ML Chrome Extension</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <main>
+    <div id="videoContainer">
+      <video id="backgroundVideo" autoplay loop muted>
+        <source src="bg_vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div id="initialContent" class="hidden">
+      <div class="head-div">
+        <h1>Tweet-UP-Lift</h1>
+      </div>
+      <div class="input--div" id="inp--hide">
+        <label for="myInput" class="label">
+          <span class="label-title">Enter your Thought</span>
+          <input id="myInput" class="input" name="text" placeholder="I am Great...." type="text">
+        </label>
+      </div>
+      <button id="sendDataBtn">Analyse</button>
+    </div>
+    <div id="loader" class="hidden loader">
+    </div>
+    <div id="output" class="hidden">
+      <div id="page">
+        <div class="space"></div>
+          <div id="container">
+              <div id="ring"></div>
+              <div id="ring"></div>
+              <div id="ring"></div>
+              <div id="ring"></div>
+              <div id="h3">loading...</div>
+          </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
